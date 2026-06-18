@@ -1,0 +1,285 @@
+.profile-page {
+  padding: var(--space-md) 0 var(--space-2xl);
+  background: #FAFAF7;
+}
+
+.profile-header {
+  margin-bottom: var(--space-lg);
+}
+
+.profile-header h1 {
+  margin-bottom: var(--space-xs);
+  color: #1C1C1C;
+}
+
+.profile-email {
+  color: #4A4A4A;
+  font-size: 0.9375rem;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-xl);
+}
+
+.profile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.nav-item {
+  text-align: left;
+  padding: var(--space-sm);
+  color: #4A4A4A;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.nav-item:hover {
+  background: rgba(184, 134, 11, 0.1);
+  color: #1C1C1C;
+}
+
+.nav-item.active {
+  background: #1C1C1C;
+  color: #FAFAF7;
+  border-left: 2px solid #B8860B;
+}
+
+.profile-content .section h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid #E5E5E5;
+  color: #1C1C1C;
+}
+
+.empty-state {
+  color: #4A4A4A;
+  text-align: center;
+  padding: var(--space-xl);
+  background: #FAFAF7;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.order-card {
+  background: #FAFAF7;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #1C1C1C;
+}
+
+.order-date {
+  font-size: 0.75rem;
+  color: #4A4A4A;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 2px;
+}
+
+.status-processing {
+  background: #E5E5E5;
+  color: #4A4A4A;
+}
+
+.status-shipped {
+  background: rgba(184, 134, 11, 0.15);
+  color: #9A7209;
+}
+
+.status-delivered {
+  background: #B8860B;
+  color: #1C1C1C;
+}
+
+.status-cancelled {
+  background: #FBEAEA;
+  color: #8a2c24;
+}
+
+.order-card-body {
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-items-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item-preview {
+  font-size: 0.875rem;
+  color: #1C1C1C;
+}
+
+.order-total {
+  text-align: right;
+}
+
+.order-total .label {
+  display: block;
+  font-size: 0.75rem;
+  color: #4A4A4A;
+}
+
+.order-total .value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1C1C1C;
+}
+
+/* Info Card */
+.info-card {
+  background: #FAFAF7;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  padding: var(--space-md);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: #4A4A4A;
+  font-size: 0.9375rem;
+}
+
+.info-value {
+  color: #1C1C1C;
+  font-weight: 500;
+}
+
+/* Addresses List */
+.addresses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.address-card {
+  position: relative;
+  background: #FAFAF7;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  padding: var(--space-md);
+}
+
+.default-badge {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  background: #B8860B;
+  color: #1C1C1C;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.address-type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #B8860B;
+  margin-bottom: var(--space-xs);
+}
+
+.address-street,
+.address-city-state,
+.address-country {
+  color: #1C1C1C;
+  margin: 0 0 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+    border-left: none !important;
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav-item.active {
+    border-bottom: 2px solid #B8860B;
+    background: transparent;
+    color: #1C1C1C;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-card-body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .order-total {
+    text-align: left;
+    width: 100%;
+    padding-top: var(--space-sm);
+    border-top: 1px solid #E5E5E5;
+  }
+
+  .addresses-list {
+    grid-template-columns: 1fr;
+  }
+}
