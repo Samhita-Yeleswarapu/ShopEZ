@@ -2,8 +2,6 @@
 
 A full-stack ecommerce app built on the MERN stack — MongoDB, Express, React, and Node. You can browse a product catalog, create an account, add things to a cart, and check out with Cash on Delivery, UPI, or card. All prices are in Indian Rupees (₹).
 
-This started as a front-end-only demo (fake login, mock data pulled from a public API) and was rebuilt into a real client-server app: a proper Express + MongoDB backend, JWT-based auth with hashed passwords, and a React frontend that actually talks to that backend instead of faking everything in `localStorage`.
-
 ## What's in here
 
 ```
@@ -13,7 +11,7 @@ shopez/
 └── README.md     you are here
 ```
 
-Each folder has its own README with more focused setup notes — this one is the bird's-eye view.
+Each folder has its own README with more focused setup notes.
 
 ## Tech stack
 
